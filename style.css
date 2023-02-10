@@ -1,0 +1,385 @@
+:root{
+    --bold-title:#060437;
+    --text-color: hsl(238, 22%, 44%);
+    --button:#2F65F9;
+    --fylo-works:#5F9E95;
+    --early-bg:#565989;
+    --bottom-bg:#06043B;
+    --button-hover:#6A9BFF;
+
+   --font-family:'Raleway',sans-serif;
+
+}
+@import url('https://fonts.googleapis.com/css2?family=Bai+Jamjuree:wght@400;600&family=Karla:wght@400;700&family=League+Spartan:wght@400;500;700&family=Open+Sans&family=Poppins:wght@200;400;600&family=Raleway:wght@400;700&display=swap');
+/*
+  1. Use a more-intuitive box-sizing model.
+*/
+*, *::before, *::after {
+    box-sizing: border-box;
+  }
+  /*
+    2. Remove default margin
+  */
+  * {
+    margin: 0;
+  }
+  /*
+    3. Allow percentage-based heights in the application
+  */
+  html, body {
+    height: 100%;
+  }
+  /*
+    Typographic tweaks!
+    4. Add accessible line-height
+    5. Improve text rendering
+  */
+  body {
+    line-height: 1.5;
+    -webkit-font-smoothing: antialiased;
+  }
+  /*
+    6. Improve media defaults
+  */
+  img, picture, video, canvas, svg {
+    display: block;
+    max-width: 100%;
+  }
+  /*
+    7. Remove built-in form typography styles
+  */
+  input, button, textarea, select {
+    font: inherit;
+  }
+  /*
+    8. Avoid text overflows
+  */
+  p, h1, h2, h3, h4, h5, h6 {
+    overflow-wrap: break-word;
+  }
+  /*
+    9. Create a root stacking context
+  */
+  #root, #__next {
+    isolation: isolate;
+  }
+  body{
+    font-family: var(--font-family);
+    font-size: 16px;
+  }
+  .container{
+   position: absolute;
+   display: flex;
+   flex-direction: column;
+   justify-content: center;
+   align-items: center;
+  }
+
+  .top{
+    width: 90%;
+  }
+  .early-access,.bottom,.middle{
+    width: 100%;
+    padding: 0 5%;
+  }
+  .top{
+    display:flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding: 2rem 0;
+  }
+  .logo{
+    width: 30%;
+  }
+  .right{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    gap: 1rem;
+  }
+  .right a{
+    text-decoration: none;
+    color: var(--desaturated-blue);
+  }
+  .middle{
+    display: flex;
+    flex-direction: column-reverse;
+    padding: 4rem 0;
+    text-align: center;
+  }
+  .title{
+    color: var(--bold-title);
+    font-size: 27px;
+    padding: 2rem 0;
+  }
+  .mail-start{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 1rem;
+    padding:2rem 0 9rem 0 ;
+  }
+  input,button{
+    height: 3rem;
+    border-radius: 6px;
+    
+  }
+  .mail-start input{
+    border: 1px solid var(--text-color);
+
+  }
+  button {
+   background-color: var(--button);
+   color: white;
+   border-style: none;
+   font-weight: bold;
+   box-shadow: rgba(50, 50, 93, 0.25) 0px 13px 27px -5px, rgba(0, 0, 0, 0.3) 0px 8px 16px -8px;
+  
+  }
+  .middle{
+    background-image: url(./images/bg-curve-mobile.svg);
+    background-repeat: no-repeat;
+   background-size: 100%;
+   background-position: bottom;
+   padding: 0 5%;
+  }
+  .for-bg{
+    display: flex;
+    flex-direction: column-reverse;
+    padding-top: 5rem;
+    background-color: #F9F8FE;
+  }
+  .left-third,.right-third{
+    padding: 2rem 5%;
+    text-align: center;
+  }
+  .third-text,.third-text-two{
+    text-align: left;
+    padding: 0.5rem 0;
+  }
+  .third-title{
+    font-size: 16px;
+  }
+  .green-a {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    padding: 2rem 0;
+  }
+  .third a{
+    text-decoration: none;
+    color: #5FB7A6;
+  }
+  .quote{
+    padding: 1.8rem;
+    text-align: left;
+    background-color: white;
+    border-radius: 5px;
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 6px 12px -2px, rgba(0, 0, 0, 0.3) 0px 3px 7px -3px;
+  }
+  .quote-text{
+    padding: 1rem 0;
+  }
+  .founder{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: flex-start;
+  }
+  .founder-image{
+    width: 12%;
+    border-radius: 50%;
+    border-style: none;
+  }
+  .kyle{
+    display: flex;
+    flex-direction: column;
+    font-size: 13px;
+    padding-left: 1rem;
+  }
+  .early-access{
+    padding: 2rem 5%;
+    background-color: var(--early-bg);
+
+  }
+  .ea-title,.ea{
+    text-align: center;
+    color: white;
+    padding: 0.6rem;
+  }
+  .ea-right{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 1rem;
+  }
+  .email-ea,.get-ea{
+    width: 90%;
+    border-style: none;
+  }
+  .fylo-logo{
+    width: 40%;
+    padding-top:3rem ;
+  }
+  .bottom{
+    color: white;
+    background-color: var(--bottom-bg);
+    display: flex;
+    flex-direction: column;
+    justify-content: left;
+    gap: 2rem;
+  }
+  .phone,.mail{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 1.5rem;
+  }
+  .about-us,.contact-us{
+    display: flex;
+    flex-direction: column;
+    justify-content: left;
+  }
+  .about-us{
+    padding: 2.5rem 0;
+  }
+  .about-us a ,.contact-us a{
+   color: white;
+   text-decoration: none;
+   padding-bottom: 1rem;
+  }
+  ul{
+    list-style-type: none;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+   gap: 1.5rem;
+    margin: 0 auto;
+    padding: 0 0 3rem 0;
+  }
+  button:hover{
+    background-color: var(--button-hover);
+   transition: 0.3s ease;
+   cursor: pointer;
+  }
+  .bottom a:hover, ul li a:hover{
+    color:var(--early-bg);
+  }
+  @media only screen and (min-width:769px){
+
+    .top{
+        width: 90%;
+        justify-content: space-between;
+    }
+    .container{
+        width: 100%;
+    }
+    .middle{
+        flex-direction: row;
+        padding: 5rem 5% 20rem 5%;
+        text-align: left;
+        align-items: center;
+    }
+    .mail-start{
+        flex-direction: row;
+    }
+    .middle input{
+        width: 60%;
+    }
+    .middle button{
+        width: 40%;
+    }
+    .third{
+        width: 100%;
+    }
+    .for-bg{
+       padding: 0 5%;
+       flex-direction: row;
+    }
+    .left-third{
+     justify-content: left;
+      text-align: left;
+      padding: 0;
+    }
+    .green-a{
+        justify-content: left;
+    }
+    .quote{
+        width: 60%;
+    }
+    .third{
+        padding-bottom: 5rem;
+        background-color: #F8F8FD;
+    }
+    .third-title{
+        font-size:28px ;
+    }
+    .third-text,.third-text-two{
+        padding-right: 5rem;
+    }
+    .early-access-container{
+        display: flex;
+       flex-direction: row;
+       justify-content: space-between;
+       padding: 3rem 0;
+       
+    }
+    .ea-title,.ea{
+        text-align: left;
+    }
+    .ea-right{
+       width: 70%;
+       justify-content: left;
+       align-items: center;
+    }
+    .early-access button{
+       width: 40%;
+    }
+    .ea-left{
+        padding-right: 5rem;
+    }
+    .fylo img{
+        width: 13%;
+    }
+    .bottom-row{
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+    }
+    .bottom-elements{
+        display: flex;
+        flex-direction: row;
+        width: 90%;
+        justify-content: space-evenly;
+        align-items: center;
+
+    }
+
+
+
+
+
+
+
+
+
+
+
+
+  }
+
+ 
+
+
+
+ 
+  
+
+
+
+  
+
